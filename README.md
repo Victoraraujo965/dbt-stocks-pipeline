@@ -1,6 +1,18 @@
-# dbt Stocks Pipeline
+# DBT Stocks Pipeline
 
 ELT pipeline completo para análise de dados de ações do mercado financeiro americano.
+
+## Sobre o projeto
+
+Empresas modernas de dados não transformam dados antes de carregá-los no warehouse — elas carregam tudo primeiro e transformam depois. Esse padrão se chama ELT (Extract, Load, Transform), e o dbt é a ferramenta padrão de mercado para o T dessa equação.
+
+Este projeto simula um pipeline real de engenharia de dados para o mercado financeiro. Dados de 5 ações americanas são extraídos da API do yfinance, carregados em um PostgreSQL containerizado com Docker, e transformados em camadas organizadas com dbt — o mesmo fluxo usado por times de dados em empresas que operam com Snowflake, BigQuery ou Redshift.
+
+O objetivo foi cobrir o máximo de conceitos do dbt em um projeto com contexto real: desde a ingestão até a camada de consumo pronta para um dashboard em Power BI ou Looker.
+
+## Por que dbt?
+
+Em ambientes corporativos com AWS, Azure ou GCP, o dbt entra após as ferramentas de ingestão (Fivetran, Airbyte, Glue) e atua dentro do warehouse — organizando, testando e documentando as transformações SQL. Ele não substitui essas ferramentas, complementa. O resultado é um pipeline versionado no Git, com testes de qualidade declarativos e documentação gerada automaticamente — algo que procedures SQL legadas jamais entregam.
 
 ## Stack
 

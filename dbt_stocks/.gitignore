@@ -1,0 +1,18 @@
+# dbt
+target/
+dbt_packages/
+logs/
+
+# Python
+__pycache__/
+*.pyc
+venv_dbt/
+venv/
+venv-=_dbt/
+
+# Credenciais
+.env
+
+# OS
+.DS_Store
+Thumbs.db

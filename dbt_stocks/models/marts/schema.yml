@@ -1,0 +1,46 @@
+version: 2
+
+models:
+  - name: mart_stock_daily
+    description: "Mart final com métricas diárias de ações enriquecidas com dados da empresa. Camada de consumo para BI e análises."
+    columns:
+      - name: symbol
+        description: "Ticker da ação"
+        tests:
+          - not_null
+      - name: company_name
+        description: "Nome completo da empresa"
+      - name: sector
+        description: "Setor de atuação da empresa"
+      - name: country
+        description: "País de origem"
+      - name: date
+        description: "Data do pregão"
+        tests:
+          - not_null
+      - name: price_close
+        description: "Preço de fechamento"
+        tests:
+          - not_null
+      - name: daily_change
+        description: "Variação absoluta entre abertura e fechamento"
+        tests:
+          - not_null
+      - name: daily_change_pct
+        description: "Variação percentual entre abertura e fechamento"
+        tests:
+          - not_null
+      - name: day_direction
+        description: "Classificação do dia: alta, baixa ou neutro"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['alta', 'baixa', 'neutro']
+      - name: avg_close_month
+        description: "Média do preço de fechamento no mês de referência"
+      - name: total_volume_month
+        description: "Volume total negociado no mês de referência"
+      - name: loaded_at
+        description: "Timestamp de carga — usado para incrementalidade no BI"
+        tests:
+          - not_null

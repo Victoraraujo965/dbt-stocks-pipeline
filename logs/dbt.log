@@ -1,0 +1,48 @@
+==================== 2026-06-15T18:13:40.923895Z | 019ecc7d-3fb8-7901-b87e-a10bbec01768 ====================
+18:13:40.924130 [info ]: Installing dbt project and profile setup
+18:13:40.972628 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+18:13:40.990087 [info ]: Success Project created successfully!
+18:13:40.990668 [info ]: Info Project name: jaffle_shop
+18:13:40.991810 [info ]: Info Project directory: jaffle_shop
+18:13:40.992366 [info ]: Info Setting up your profile...
+18:13:40.993027 [info ]: Info Creating new profile...
+18:13:55.802282 [info ]: No dbt_cloud.yml found - proceeding without cloud pre-population
+18:15:03.740994 [info ]: Success Profile written to C:\Users\Admin\.dbt\profiles.yml
+18:15:03.741899 [info ]: Validating profile inputs, adapters, and connection
+
+18:15:03.742370 [info ]: dbt-core 2.0.0-alpha.1
+18:15:03.743729 [info ]: Started loading project
+18:15:03.749776 [info ]: Loading ~/.dbt/profiles.yml
+18:15:03.773102 [info ]: Finished loading project [  0.03s]
+18:15:03.773507 [error]: [InvalidConfig (dbt1005)]: The 'postgres' adapter is not yet supported by dbt Fusion. Supported adapters: snowflake, bigquery, databricks, redshift
+18:15:03.950807 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' with 1 error [1m 23s]
+[0m15:31:00.921101 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244D5084EC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244D2CB39D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244D76CFD90>]}
+
+
+============================== 15:31:00.953455 | 8539d73e-1af5-4bb8-84d4-ed5b999846e8 ==============================
+[0m15:31:00.953455 [info ] [MainThread]: Running with dbt=1.8.0
+[0m15:31:00.954472 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\Admin\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt init dbt_stocks', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:31:01.308460 [debug] [MainThread]: Starter project path: C:\Users\Admin\Desktop\dbt_financeiro\venv-=_dbt\Lib\site-packages\dbt\include\starter_project
+[0m15:31:01.362542 [info ] [MainThread]: 
+Your new dbt project "dbt_stocks" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:31:01.363448 [info ] [MainThread]: Setting up your profile.
+[0m15:32:11.050357 [info ] [MainThread]: Profile dbt_stocks written to C:\Users\Admin\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m15:32:11.052210 [debug] [MainThread]: Command `dbt init` succeeded at 15:32:11.051910 after 70.38 seconds
+[0m15:32:11.053182 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244D7A78050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244D799F890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244D77CFBD0>]}
+[0m15:32:11.055267 [debug] [MainThread]: Flushing usage events
